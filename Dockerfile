@@ -5,7 +5,7 @@ WORKDIR /opt/coin
 
 EXPOSE 8356
 
-RUN apt-get update && apt-get install -y wget
+RUN apt-get update && apt-get install -y wget python
 RUN wget https://download.bitcoinsv.io/bitcoinsv/1.0.0/bitcoin-sv-1.0.0-x86_64-linux-gnu.tar.gz -O - | tar -xzf - --strip-components 1
 
 # cleanup
